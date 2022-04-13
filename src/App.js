@@ -23,9 +23,9 @@ export default class App extends Component {
         errpass: 'invalid password please more than 5',
       });
     }
-    if (!this.state.name.includes('*')) {
+    if (!this.state.name.includes('@')) {
       this.setState({
-        errName: 'invalid name please include *',
+        errName: 'invalid name please include @',
       });
     }
     else{
